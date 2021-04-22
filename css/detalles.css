@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    background-color: rgb(231, 89, 89);
+    max-width: 90%;
+    max-height: 90%;
+    align-items: center;
+    font-family: "Open sans", sans-serif;
+}
+
+.imagenes{
+    margin-left: 30%;
+    width: 15%;
+    align-items: center;
+}
+
+.imagenes img{
+    margin-left: 20%;
+
+}
+
+.musica{
+    margin-left: 44%;
+    width: 1vw;
+    height: 20%;
+
+}
+
+.oculto{
+    transform: scale(0);
+}
+
+.list{
+    padding: 0%;
+    width: 70%;
+    align-items: center;
+    text-align: center;
+    margin-left: 19%;
+    margin-top: 2%;
+    font-size: 1.2vw;
+}
+
+.blanco{
+    color: honeydew;
+    margin-top: 10px;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform .3s .2s;
+}
+
+
+
+.blanco:hover{
+    transform: scale(1.6);
+    transition: transform .2s .1s;
+}
+
