@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="js/js.js"></script>
         <link rel="stylesheet" href="css/detalles.css">
         <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'><link rel="preconnect" href="https://fonts.gstatic.com">
         <title>Just Relax</title>
     </head>
-    <body>
+    <body id="kup" class="">
+        <div class="reforma">
         <div class="imagenes" id="image">
-            <img id="img" src="img/window girl.jpg" alt="">
+            <img class ="mujer" id="img" src="img/window girl.jpg" alt="">
+            <img class="oculto" id="img2" src="img/gojo.jpg"> 
         </div>
         <div class="controles">
             
         </div>
         <div class="musica">
-            <audio id="reproductor" class="player" src="audio/fukashigi no krate.mp3" controls ></audio>  <p class="siguiente1"></p>
-    </div>
+            <audio id="reproductor" class="player" src="myfile" controls autoplay></audio> 
+            <div class="panel-control">
+            <img onclick="bucle(this)" id="bucle" class="icono" src="img/icons/repeat-regular-24.png" alt=""> <img onclick="cambiofondo(this)" id="awa" src="img/icons/bxs-color-fill.svg" alt="" class="icono"> <img onclick="quitacontrol(this)" src="img/icons/bx-message-alt-x.svg" class="icono" id="remvcontrol" alt="">
+        </div>
+        </div>
         <div id="listado" class="list">
             <p onclick="cambiolista1()"id="cambio-lista1" class="blanco">Lost in paradise (Lofi version)</p>
             <p onclick="cambiolista2()"id="cambio-lista2" class="blanco">Lost in Paradise</p>
             <p onclick="cambiolista3()"id="cambio-lista3" class="blanco">shiloh dinasty</p>
-            <p onclick="cambiolista4()"id="cambio-lista4" class="blanco">Fukashigi no krate (lofi version)</p>
+            <p onclick="cambiolista4()"id="cambio-lista4" class="blanco">Fukashigi no krate (lofi version)</p>      
+        
         </div>
+    </div>
     </body>
 </html>
